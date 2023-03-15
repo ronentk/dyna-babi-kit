@@ -1,0 +1,39 @@
+{
+    "tasks": ["qa1", "qa2", "qa3", "qa5", "qa6",
+        "qa7", "qa8", "qa9", "qa10", "qa11", "qa12", "qa13"],
+
+    "inject_config": {
+        
+        "qa2": {"orig_q_types": ["where_object"],
+            "add_q_types": ["where_person"]
+            },
+
+        "qa3": {"orig_q_types": ["where_was_object"],
+            "add_q_types": ["where_object","where_person"]
+            },
+
+        "qa5": {"orig_q_types": ["giving"],
+            "add_q_types": ["where_object","where_person"]
+            },
+
+        "qa6": {"orig_q_types": ["where_object","yes_no"],
+            "add_q_types": ["where_person"]
+            },
+
+        "qa7": {"orig_q_types": ["counting"],
+            "add_q_types": ["where_object","where_person"]
+            },
+
+        "qa8": {"orig_q_types": ["list"],
+            "add_q_types": ["where_object","where_person"]
+            },
+
+        "qa9": {"orig_q_types": ["where_object","yes_no"],
+            "add_q_types": ["where_person"]
+            },
+
+        "qa10": {"orig_q_types": ["where_object","yes_no"],
+            "add_q_types": ["where_person"]
+            }
+    }
+}

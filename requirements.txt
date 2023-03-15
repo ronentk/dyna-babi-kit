@@ -1,0 +1,11 @@
+dataclass-type-validator==0.0.5
+dataclasses-json==0.5.2
+docopt>=0.6.2
+networkx>=2.5
+numpy==1.20.1
+pandas==1.2.1
+pytest
+shortuuid
+tqdm
+dacite
+transformers==4.11.2

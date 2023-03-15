@@ -1,0 +1,13 @@
+*.pyc
+*.ini
+*.bak
+*.code-workspace
+data/*
+**/wandb/*
+scripts/artifacts/*
+scripts/wandb/*
+analysis/wandb/*
+_configs/*
+**/artifacts/*
+tests/test_output_dir/*
+**/*checkpoint.ipynb

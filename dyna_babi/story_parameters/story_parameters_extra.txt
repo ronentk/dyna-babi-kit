@@ -1,0 +1,19 @@
+samples:100
+n_questions:5
+question_probability:0.5
+actions_before_question:2
+questions:where_object,where_person,where_was_object,giving,yes_no,counting,list
+questions_distribution:1,1,1,1,1,1,1
+max_actions:70
+actions:move,grab,drop,give,coref,conj,compound,negate,indef
+actions_distribution:1,1,1,1,1,0.5,0.5,1,1
+coref:move,grab,drop
+coref_distribution:1,1,1
+move:journeyed,moved,travelled,went,went back
+grab:grabbed,picked up,took,got
+drop:discarded,dropped,left,put down
+give:gave,handed,passed
+negate:not,no longer
+negate_distribution:1,1
+coreference_prefixes:After that,Following that,Afterwards,Then
+entity_coreference_map:John he,Daniel he,Fred he,Bill he,Jeff he,Julie she,Sandra she,Mary she,Bob he

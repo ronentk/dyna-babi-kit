@@ -1,0 +1,3 @@
+persons:Daniel,Mary,John,Sandra,Fred,Bill,Jeff,Julie
+objects:apple,football,milk
+locations:bathroom,bedroom,garden,hallway,kitchen,office,cinema,park,school

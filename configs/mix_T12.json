@@ -1,0 +1,555 @@
+{
+    "combine_files": true,
+    "name": "mix_T12",
+    "out_dir": "data",
+    "tasks": [
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        1,
+                        1
+                    ],
+                    "valid_q_types": [
+                        "yes_no"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "yes_no"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "yes_no"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        4,
+                        15
+                    ],
+                    "valid_q_types": [
+                        "yes_no"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    0.5,
+                    1.0,
+                    0.8,
+                    1.0,
+                    1.0,
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "yn",
+                "negate_distribution": [
+                    0.5,
+                    0.5
+                ],
+                "question_probability": 1,
+                "questions": [
+                    "yes_no"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 99378
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        1,
+                        1
+                    ],
+                    "valid_q_types": [
+                        "where_person"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "where_person"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "where_person"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        4,
+                        15
+                    ],
+                    "valid_q_types": [
+                        "where_person"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    0.5,
+                    1.0,
+                    0.8,
+                    1.0,
+                    1.0,
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wp",
+                "negate_distribution": [
+                    0.5,
+                    0.5
+                ],
+                "question_probability": 1,
+                "questions": [
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 992688
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 334,
+                    
+                    
+                    "num_supp_fact_range": [
+                        4,
+                        15
+                    ],
+                    "valid_q_types": [
+                        "where_object"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 334,
+                    
+                    
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "where_object"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 334,
+                    
+                    
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "where_object"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    0.5,
+                    1.0,
+                    0.8,
+                    1.0,
+                    1.0,
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wo",
+                "negate_distribution": [
+                    0.5,
+                    0.5
+                ],
+                "question_probability": 1,
+                "questions": [
+                    "where_object"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 9921978
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        6,
+                        15
+                    ],
+                    "valid_q_types": [
+                        "where_was_object"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "where_was_object"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        4,
+                        4
+                    ],
+                    "valid_q_types": [
+                        "where_was_object"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    
+                    
+                    "num_supp_fact_range": [
+                        5,
+                        5
+                    ],
+                    "valid_q_types": [
+                        "where_was_object"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    0.5,
+                    1.0,
+                    0.8,
+                    1.0,
+                    1.0,
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wwo",
+                "negate_distribution": [
+                    0.5,
+                    0.5
+                ],
+                "question_probability": 1,
+                "questions": [
+                    "where_was_object"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 999988
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        6,
+                        15
+                    ],
+                    "valid_q_types": [
+                        "list"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "list"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        4,
+                        4
+                    ],
+                    "valid_q_types": [
+                        "list"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        5,
+                        5
+                    ],
+                    "valid_q_types": [
+                        "list"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    0.5,
+                    1.0,
+                    0.8,
+                    1.0,
+                    1.0,
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "list",
+                "negate_distribution": [
+                    0.5,
+                    0.5
+                ],
+                "question_probability": 1,
+                "questions": [
+                    "list"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 9319988
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        6,
+                        15
+                    ],
+                    "valid_q_types": [
+                        "counting"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "counting"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        4,
+                        4
+                    ],
+                    "valid_q_types": [
+                        "counting"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 250,
+                    "num_supp_fact_range": [
+                        5,
+                        5
+                    ],
+                    "valid_q_types": [
+                        "counting"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    0.5,
+                    1.0,
+                    0.8,
+                    1.0,
+                    1.0,
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "counting",
+                "negate_distribution": [
+                    0.5,
+                    0.5
+                ],
+                "question_probability": 1,
+                "questions": [
+                    "counting"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 93119988
+            }
+        }
+    ],
+    "use_new_engine": false,
+    "write_dec": true,
+    "write_tt": true,
+    "only_dev": true
+}

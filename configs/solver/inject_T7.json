@@ -1,0 +1,17 @@
+{
+    "tasks": ["qa1", "qa2", "qa3", "qa5", "qa11", "qa12", "qa13"], 
+    "inject_config": {
+        
+        "qa2": {"orig_q_types": ["where_object"],
+            "add_q_types": ["where_person"]
+            },
+
+        "qa3": {"orig_q_types": ["where_was_object"],
+            "add_q_types": ["where_object","where_person"]
+            },
+
+        "qa5": {"orig_q_types": ["giving"],
+            "add_q_types": ["where_object","where_person"]
+            }
+    }
+}

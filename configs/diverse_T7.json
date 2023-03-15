@@ -1,0 +1,484 @@
+{
+    "combine_files": true,
+    "save_separate": false,
+    "name": "diverse_T7",
+    "out_dir": "data",
+    "tasks": [
+        {
+            "filter_config": [
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "where_person"
+                    ]
+                },
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        1,
+                        1
+                    ],
+                    "valid_q_types": [
+                        "where_person"
+                    ]
+                },
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "where_person"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wp",
+                "question_probability": 1,
+                "questions": [
+                    "where_object",
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0,
+                    1.0
+                ],
+                "samples": 3000,
+                "seed": 5994428
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/1_wp",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "where_object"
+                    ]
+                },
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "where_object"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wo",
+                "question_probability": 1,
+                "questions": [
+                    "where_object",
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0,
+                    1.0
+                ],
+                "samples": 2000,
+                "seed": 5998728
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/2_wo",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 5000,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "where_was_object"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wwo",
+                "question_probability": 1,
+                "questions": [
+                    "where_was_object"
+                ],
+                "questions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "samples": 5000,
+                "seed": 998423178
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/3_wwo",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                },
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop",
+                    "give"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "give_wo",
+                "question_probability": 1,
+                "questions": [
+                    "where_object"
+                ],
+                "questions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "samples": 2000,
+                "seed": 9923878
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/4_give_wo",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        1,
+                        1
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                },
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                },
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop",
+                    "give"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "exhaustive": true,
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "give_wp",
+                "question_probability": 1,
+                "questions": [
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "samples": 3000,
+                "seed": 9923878
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/5_give_wp",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 10000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        1,
+                        1
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop",
+                    "give"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "give",
+                "question_probability": 1,
+                "questions": [
+                    "giving"
+                ],
+                "questions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 994878
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/6_give",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "story_params": {
+                "actions": [
+                    "move",
+                    "coref"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0
+                ],
+                "coref": [
+                    "move"
+                ],
+                "coref_distribution": [
+                    0.1
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "coref",
+                "question_probability": 1,
+                "questions": [
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 99133878
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/7_coref",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "story_params": {
+                "actions": [
+                    "move",
+                    "compound"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "compound",
+                "question_probability": 1,
+                "questions": [
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 9921838
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/8_compound",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        },
+        {
+            "story_params": {
+                "actions": [
+                    "move",
+                    "conj"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "conj",
+                "question_probability": 1,
+                "questions": [
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 992182278
+            },
+            "sw_config": {
+                "out_dir": "data/diverse_T7/9_conj",
+                
+                "write_dec": true,
+                "write_tt": true
+            }
+        }
+    ]
+}

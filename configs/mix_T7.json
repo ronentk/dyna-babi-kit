@@ -1,0 +1,205 @@
+{
+    "combine_files": true,
+    "name": "mix_T7",
+    "out_dir": "data",
+    "tasks": [
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 1000,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop",
+                    "give",
+                    "coref",
+                    "conj",
+                    "compound"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wwo",
+                "question_probability": 1,
+                "questions": [
+                    "where_was_object"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 34534577
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 500,
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                },
+                {
+                    "max_fail": 50000,
+                    "max_len": 20,
+                    "max_pass": 500,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop",
+                    "give",
+                    "coref",
+                    "conj",
+                    "compound"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wo",
+                "question_probability": 1,
+                "questions": [
+                    "where_object"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 344577
+            }
+        },
+        {
+            "filter_config": [
+                {
+                    "max_len": 20,
+                    "max_pass": 334,
+                    "num_supp_fact_range": [
+                        1,
+                        1
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                },
+                {
+                    "max_len": 20,
+                    "max_pass": 333,
+                    "num_supp_fact_range": [
+                        2,
+                        2
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                },
+                {
+                    "max_len": 20,
+                    "max_pass": 333,
+                    "num_supp_fact_range": [
+                        3,
+                        3
+                    ],
+                    "valid_q_types": [
+                        "all"
+                    ]
+                }
+            ],
+            "story_params": {
+                "actions": [
+                    "move",
+                    "grab",
+                    "drop",
+                    "give",
+                    "coref",
+                    "conj",
+                    "compound"
+                ],
+                "actions_before_question": 20,
+                "actions_distribution": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "coref_distribution": [
+                    0.1,
+                    1.0,
+                    1.0
+                ],
+                "max_actions": 70,
+                "n_questions": 1,
+                "name": "wp",
+                "question_probability": 1,
+                "questions": [
+                    "where_person"
+                ],
+                "questions_distribution": [
+                    1.0
+                ],
+                "samples": 1000,
+                "seed": 344577
+            }
+        }
+    ],
+    "write_dec": true,
+    "write_tt": true,
+    "only_dev": true
+}
